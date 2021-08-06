@@ -13,7 +13,7 @@ export const shoesReducer = (state=initialstate, action) =>{
         case Buy_shoes:
             return{
                 ...state, 
-                numOfShoes: state.numOfShoes-1
+                numOfShoes: state.numOfShoes-action.payload
             }
         default: return state
     }

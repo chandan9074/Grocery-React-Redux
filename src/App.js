@@ -8,6 +8,7 @@ import Grocery from './components/grocery';
 import { store } from './redux/store';
 import HookGrocery from './components/hookGrocery';
 import Shoes from './components/shoes';
+import NewShoes from './components/newShoes';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Grocery/>
         <HookGrocery/>
         <Shoes/>
+        <NewShoes/>
       </div>
     </Provider>
   );
