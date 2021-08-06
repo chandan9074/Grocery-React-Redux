@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { buy_grocery } from '../redux';
 
 const HookGrocery = () => {
-    const numOfProducts = useSelector(state=>state.numOfProducts);
+    const numOfProducts = useSelector(state => state.grocery.numOfProducts);
     const dispatch = useDispatch();
 
     return ( 

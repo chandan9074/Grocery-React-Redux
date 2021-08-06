@@ -7,6 +7,7 @@ import './App.css';
 import Grocery from './components/grocery';
 import { store } from './redux/store';
 import HookGrocery from './components/hookGrocery';
+import Shoes from './components/shoes';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Grocery/>
         <HookGrocery/>
+        <Shoes/>
       </div>
     </Provider>
   );

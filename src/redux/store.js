@@ -2,6 +2,6 @@
 import { createStore } from "redux";
 
 // import reducer
-import { groceryReducer } from "./grocery/groceryReducer";
+import { rootReducer } from "./rootReducers";
 
-export const store = createStore(groceryReducer)
+export const store = createStore(rootReducer)
