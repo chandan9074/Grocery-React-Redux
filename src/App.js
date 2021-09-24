@@ -1,6 +1,6 @@
 // import pakages
 import React from 'react';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 
 // import components
 import './App.css';
@@ -12,14 +12,12 @@ import NewShoes from './components/newShoes';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Grocery/>
-        <HookGrocery/>
-        <Shoes/>
-        <NewShoes/>
-      </div>
-    </Provider>
+    <div className="App">
+      <Grocery/>
+      <HookGrocery/>
+      <Shoes/>
+      <NewShoes/>
+    </div>
   );
 }
 

@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store , persistor} from './redux/store';
+// import {persistGate} from 'react-persist/integration/react'
+import {PersistGate} from 'redux-persist/integration/react';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
